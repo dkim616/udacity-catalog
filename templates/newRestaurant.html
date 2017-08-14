@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>New Restaurant</h1>
+
+<form action="#" method="POST">
+    <label for="name">Name:</label>
+    <input type ="text" maxlength="100" name="name">
+    <button id="submit" type="submit">Create</button>
+</form>
+<br>
+<a href="{{ url_for('showRestaurants') }}">
+    <button>Cancel</button>
+</a>
+
+{% endblock %}
